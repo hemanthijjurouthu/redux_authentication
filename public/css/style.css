@@ -1,0 +1,263 @@
+body{
+    font-family: "DM Sans", sans-serif !important;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height:5rem;
+    background-color:white;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size:2rem;
+}
+
+.nav-link {
+    color:#222222 !important
+}
+
+.f-info-links a{
+    text-decoration:none;
+    color:#222222;
+}
+
+.f-info{
+    text-align:center;
+    padding:0.5rem;
+    display:flex;
+    height:8rem;
+    background-color:#ebebeb;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.f-info-links{
+    width:100%;
+}
+
+.f-info-social-icons{
+    width:100%;
+    font-size:1.3rem;
+}
+
+.f-info-social-icons i{
+    margin-right:0.5rem;
+}
+
+/* Cards */
+.listing-card{
+    border:none !important;
+    margin-bottom:2rem;
+}
+.card-img-top{
+    border-radius:1rem !important;
+    width:100% !important;
+    object-fit:cover !important;
+}
+
+.card-body{
+    padding:0 !important;
+}
+
+.card-text{
+    font-weight:500 !important;
+}
+
+.listing-link{
+    text-decoration:none;
+}
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color:white;
+}
+
+.add-btn{
+    background-color:#fe424d !important;
+    border:none !important;
+} 
+/* show page */
+.show-img{
+    height:30vh;
+}
+
+.btns{
+    display:flex;
+}
+
+.show-card{
+    padding-left:0;
+    padding-right:0;
+}
+
+/* signip page styles */
+
+
+h1 {
+    color: red;
+}
+
+.form-label {
+    color: red;
+}
+
+.floating-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid red;
+    color: red;
+    padding: 8px;
+    width: 100%;
+    transition: border-bottom 0.3s ease;
+}
+
+.floating-input:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+.input-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.floating-input:focus ~ .input-underline {
+    transform: scaleX(1);
+}
+
+.eye-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.eye-button:hover {
+    color: white;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: red;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+}
+
+.animated-form {
+    background-color: white;
+    border: 2px solid red;
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-title {
+    animation: fadeTitle 1.5s ease;
+}
+
+@keyframes fadeTitle {
+    0% {
+        opacity: 0;
+        letter-spacing: -3px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: normal;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .animated-form {
+        padding: 20px;
+    }
+}
+
+/* login page styles */
+
+.login-title {
+    color: #d9534f; /* Red color for the title */
+}
+
+.login-form {
+    background-color: #f8f9fa; /* Light background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.form-control {
+    border: 2px solid #d9534f; /* Red border */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #a94442; /* Darker red on focus */
+    box-shadow: 0 0 5px rgba(217, 83, 79, 0.5); /* Focus shadow effect */
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #d9534f, #c9302c); /* Gradient button */
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #c9302c, #d9534f); /* Reverse gradient on hover */
+}
+
+.input-underline {
+    height: 2px;
+    background: #d9534f; /* Red underline */
+    transition: width 0.3s ease;
+    width: 0;
+}
+
+.form-control:focus + .input-underline {
+    width: 100%; /* Expand underline on focus */
+}
