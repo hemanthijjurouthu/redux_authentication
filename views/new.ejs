@@ -1,0 +1,45 @@
+<% layout("/layouts/boilerplate") %>
+    <div class="row">
+    <div class="col-8 offset-2">
+    <br><br>
+    <h3>Create a New Listing</h3>
+    <form method="post" action="/listings" novalidate class = "needs-validation">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" placeholder="Add a cachy title" name="listing[title]" class="form-control" required>
+            <div class = "valid-feedback">please enter valid title</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea placeholder="enter description" name="listing[description]" class="form-control" required></textarea>
+            <div class = "valid-feedback">Please enter a short description</div>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image Link</label>
+            <input type="text" placeholder="enter image/URL link" name="listing[image]" class="form-control" required>
+            <div class = "valid-feedback">please enter a valid image url</div>
+        </div>
+        
+        <div class="row">
+        <div class="mb-3 col-md-4">
+            <label for = "price" class="form-label">Price</label>
+            <input placeholder="1200" name="listing[price]" class="price" class="form-control">
+            <div class = "valid-feedback">please enter a valid price</div>
+        </div>
+        <div class="mb-3 col-md-8">
+            <label for="location" class="form-label">location</label>
+            <input type="text" placeholder="Jaipur,Rajasthan" name="listing[location]" class="form-control" required>
+            <div class = "valid-feedback">please enter a valid location</div>
+        </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="country" class="form-label">country</label>
+            <input type="text" placeholder="India" name="listing[country]" class="form-control" required>
+            <div class = "valid-feedback">please enter a valid country</div>
+        </div>
+        <button class="btn btn-dark add-btn">Add</button>
+        <br><br>
+    </form>
+    </div>
+    </div>
